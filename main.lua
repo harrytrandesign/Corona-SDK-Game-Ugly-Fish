@@ -70,11 +70,8 @@ if system.getInfo("platformName") == "Android" then
 	customFont = "RoundsBlack"
 end
 
-local fbAppID = "xxxxxxxxxxxxxx"  --replace with your Facebook App ID 233280803533013
 
 local AdMob = require("ads")
-local adMobId = "ca-app-pub-1620655968737697/1813708161"
-local adMobIdInter = "ca-app-pub-1620655968737697/3290441362"
 local adMobListener = function(event) print("ADMOB AD - Event: " .. event.response) end
 AdMob.init( "admob", adMobId, adMobListener )
 
